@@ -1,0 +1,3 @@
+Average number of crime is at minimum in Feburary, 
+which is possibly becuase that Feburary has less number of days.
+Average number of crime is higher in July and August than in other months. 

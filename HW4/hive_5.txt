@@ -1,0 +1,20 @@
+HBase Shell
+Use "help" to get list of supported commands.
+Use "exit" to quit this interactive shell.
+For Reference, please visit: http://hbase.apache.org/2.0/book.html#shell
+Version 2.4.9, rc49f7f63fca144765bf7c2da41791769286dfccc, Fri Dec 17 19:02:09 PST 2021
+Took 0.0014 seconds
+hbase:001:0> scan 'ywl3922', {COLUMNS => ['user', 'month', 'body'], FILTER => "SingleColumnValueFilter('user', 'user', = ,'binary:allen-p') AND SingleColumnValueFilter('month', 'month', = ,'binary:Jan')"}
+ROW  COLUMN+CELL
+ allen-p/17. column=body:body, timestamp=2022-06-11T16:46:43.262, value=Dear phillip,\x0A\x0A\x0AThis e-mail is automated notification of the availability of your\x0Acurrent Natural Gas Intelligence Newsletter(s). Please use your\x0Ausername of "pallen" and your password to access\x0A\x0A       NGI's Bidweek Survey\x0A\x0Ahttp://intelligencepress.com/subscribers/index.html\x0A\x0AIf you have forgotten your password please visit\x0A  http://intelligencepress.com/password.html\x0Aand we will send it to you.\x0A\x0AIf you would like to stop receiving e-mail notifications when your\x0Apublications are available, please reply to this message with\x0AREMOVE E-MAIL in the subject line.\x0A\x0AThank you for your subscription.\x0A\x0AFor information about other Intelligence Press products and services,\x0Aincluding maps and glossaries visit our web site at\x0Ahttp://intelligencepress.com or call toll-free (800) 427-5747.\x0A\x0AALL RIGHTS RESERVED. (c) 2002, Intelligence Press, Inc.\x0A---\x0A           
+ allen-p/17. column=month:month, timestamp=2022-06-11T16:46:43.262, value=Jan
+ allen-p/17. column=user:user, timestamp=2022-06-11T16:46:43.262, value=allen-p
+ allen-p/18. column=body:body, timestamp=2022-06-11T16:46:43.441, value=Dear phillip,\x0A\x0A\x0AThis e-mail is automated notification of the availability of your\x0Acurrent Natural Gas Intelligence Newsletter(s). Please use your\x0Ausername of "pallen" and your password to access\x0A\x0A       NGI's Daily Gas Price Index\x0A\x0Ahttp://intelligencepress.com/subscribers/index.html\x0A\x0AIf you have forgotten your password please visit\x0A  http://intelligencepress.com/password.html\x0Aand we will send it to you.\x0A\x0AIf you would like to stop receiving e-mail notifications when your\x0Apublications are available, please reply to this message with\x0AREMOVE E-MAIL in the subject line.\x0A\x0AThank you for your subscription.\x0A\x0AFor information about other Intelligence Press products and services,\x0Aincluding maps and glossaries visit our web site at\x0Ahttp://intelligencepress.com or call toll-free (800) 427-5747.\x0A\x0AALL RIGHTS RESERVED. (c) 2002, Intelligence Press, Inc.\x0A---\x0A           
+ allen-p/18. column=month:month, timestamp=2022-06-11T16:46:43.441, value=Jan
+ allen-p/18. column=user:user, timestamp=2022-06-11T16:46:43.441, value=allen-p
+ allen-p/19. column=body:body, timestamp=2022-06-11T16:46:43.338, value=This request has been pending your approval for  60 days.  Please click http://itcapps.corp.enron.com/srrs/auth/emailLink.asp?ID=000000000067320&Page=Approval to review and act upon this request.\x0A\x0A\x0A\x0A\x0A\x0ARequest ID          : 000000000067320\x0ARequest Create Date : 10/11/01 10:24:53 AM\x0ARequested For       : matt.smith@enron.com\x0AResource Name       : Risk Acceptance Forms Local Admin Rights - Permanent\x0AResource Type       : Applications\x0A\x0A\x0A\x0A
+ allen-p/19. column=month:month, timestamp=2022-06-11T16:46:43.338, value=Jan
+ allen-p/19. column=user:user, timestamp=2022-06-11T16:46:43.338, value=allen-p
+3 row(s)
+Took 0.4078 seconds
+hbase:002:0> 

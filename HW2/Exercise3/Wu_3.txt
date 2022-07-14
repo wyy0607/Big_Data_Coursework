@@ -1,0 +1,2 @@
+RMSE for predicting the number of all crime events in the next week at the beat level: 7.304131832299605
+RMSE for predicting the number of violent crime events in the next week at the beat level: 3.7235024284640703

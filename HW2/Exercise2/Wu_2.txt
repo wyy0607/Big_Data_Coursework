@@ -1,0 +1,39 @@
+1. top 10 blocks in crime events in the last 3 years 
+('0000X', 22428)
+('001XX', 16364)
+('002XX', 13115)
+('003XX', 11491)
+('008XX', 10871)
+('015XX', 10512)
+('006XX', 10220)
+('007XX', 10158)
+('011XX', 9996)
+('005XX', 9965)
+2. two beats that are adjacent with the highest correlation 
+After checking the website, the two beats are 0714 and 0825. 
+0714 and 0825 are the beats pair with 17th highest correlation,but the top 16 pairs are not adjacent. 
+('0124,0331', 0.9999852845918141)
+('1631,2535', 0.9999780567799599)
+('0411,1214', 0.9999735329025324)
+('0512,0713', 0.9999514453097506)
+('0522,1623', 0.9999389119975028)
+('0423,0722', 0.9999248266790236)
+('1931,1933', 0.999919916834701)
+('1925,2221', 0.9999184282681457)
+('0722,2213', 0.9999164959797432)
+('0532,1024', 0.9998896512726424)
+('0822,1631', 0.9998858188659838)
+('0221,0835', 0.9998756597140145)
+('0524,1125', 0.9998600237716085)
+('1412,1912', 0.9998242235246512)
+('1231,1922', 0.9998131425958443)
+('0714,0825', 0.9998041616279773)
+('0822,2535', 0.9997986035180645)
+('0531,2212', 0.9997975922647131)
+('1124,1231', 0.9997946866951927)
+('0732,1524', 0.9997910042541008)
+3. establish if the number of crime events is different between Mayors Daly and Emanuel 
+For this part, I compared the number of crime events for the last three yearsthe two mayors in charge per district. 
+The test score for paired t-test is: 7.873268773415871
+The p-value for the paired t-test is: 5.6347920786656e-08
+Therefore, the number of crime events for the two mayors are different.
